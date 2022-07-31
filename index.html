@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Music App">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css
+    ">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu-side">
+            <h2>Playlist</h2>
+            <ul class="list-unstyled playlist-list">
+                <li class="active">
+                    <span></span>
+                    <i class="bi bi-music-note-beamed"></i>
+                    <h5>Playlist</h5>
+                </li>
+                <li>
+                    <span></span>
+                    <i class="bi bi-music-note-beamed"></i>
+                    <h5>last Listening</h5>
+                </li>
+                <li>
+                    <span></span>
+                    <i class="bi bi-music-note-beamed"></i>
+                    <h5>Recommended</h5>
+                </li>
+            </ul>
+            <div class="song-lists">
+                <ul class="list-unstyled">
+                    <li>
+                        <div class="song-box d-flex align-items-center">
+                            <span>01</span>
+                            <div class="song-box-content d-flex align-items-center gap-3">
+                                <img src="assets/5lek-foulazi-tamer.jpg" alt="5lek-foulazi-tamer">
+                                <div class="d-flex flex-column">
+                                    <h6 class="mb-0">Omry Ebtada</h6>
+                                    <span>Tamer Hosney</span>
+                                </div>
+                            </div>
+                            <span>
+                                <i class="bi bi-play-circle-fill playList  fs-3" id="omry-ebtada"></i>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="song-box d-flex align-items-center">
+                            <span>02</span>
+                            <div class="song-box-content d-flex align-items-center gap-3">
+                                <img src="assets/heya-elnas.jpeg" alt="Esht_Maak_Hekayat">
+                                <div class="d-flex flex-column">
+                                    <h6 class="mb-0">Esht_Maak_Hekayat</h6>
+                                    <span>Tamer Ashour</span>
+                                </div>
+                            </div>
+                            <span>
+                                <i class="bi bi-play-circle-fill playList  fs-3" id="Esht_Maak_Hekayat"></i>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="song-box d-flex align-items-center">
+                            <span>03</span>
+                            <div class="song-box-content d-flex align-items-center gap-3">
+                                <img src="assets/ro7k-om.jpg" alt="Ro7k">
+                                <div class="d-flex flex-column">
+                                    <h6 class="mb-0">Esial Ro7k</h6>
+                                    <span>Om Kalthoum</span>
+                                </div>
+                            </div>
+                            <span>
+                                <i class="bi bi-play-circle-fill playList  fs-3" id="el7obkolo"></i>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="song-box d-flex align-items-center">
+                            <span>04</span>
+                            <div class="song-box-content d-flex align-items-center gap-3">
+                                <img src="assets/ellela-amr.jpg" alt="ellela">
+                                <div class="d-flex flex-column">
+                                    <h6 class="mb-0">Leila Ya Albaha</h6>
+                                    <span>Amr Diab</span>
+                                </div>
+                            </div>
+                            <span>
+                                <i class="bi bi-play-circle-fill playList  fs-3"
+                                    id="Alarab_Amr-Diab_Leila_Ya-Albaha"></i>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="song-box d-flex align-items-center">
+                            <span>05</span>
+                            <div class="song-box-content d-flex align-items-center gap-3">
+                                <img src="assets/meky-wegz.webp" alt="meky-wegz">
+                                <div class="d-flex flex-column">
+                                    <h6 class="mb-0">Wegz Aqwa Mix</h6>
+                                    <span>Meky-Wegz</span>
+                                </div>
+                            </div>
+                            <span>
+                                <i class="bi bi-play-circle-fill playList  fs-3" id="Wegz.Aqwa.Mix"></i>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="song-box d-flex align-items-center">
+                            <span>06</span>
+                            <div class="song-box-content d-flex align-items-center gap-3">
+                                <img src="assets/kol-youm.jpg" alt="Mohamed Hamaki">
+                                <div class="d-flex flex-column">
+                                    <h6 class="mb-0">Ma Balash</h6>
+                                    <span>Mohamed Hamaki</span>
+                                </div>
+                            </div>
+                            <span>
+                                <i class="bi bi-play-circle-fill playList  fs-3" id="HamakiMaBalash"></i>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="song-box d-flex align-items-center">
+                            <span>07</span>
+                            <div class="song-box-content d-flex align-items-center gap-3">
+                                <img src="assets/artists/ehabtwfik.jfif" alt="kol-youm">
+                                <div class="d-flex flex-column">
+                                    <h6 class="mb-0">Kelmetayan</h6>
+                                    <span>Ehab Twfik</span>
+                                </div>
+                            </div>
+                            <span>
+                                <i class="bi bi-play-circle-fill playList  fs-3" id="Kelmetayan"></i>
+                            </span>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="song-side">
+            <nav class="d-flex align-items-center justify-content-between px-4">
+                <ul class="list-unstyled">
+                    <li class="active">Discover</li>
+                    <li>My Library</li>
+                    <li>Radio</li>
+                </ul>
+                <div class="search-box d-flex align-items-center position-relative">
+                    <i class="bi bi-search fs-5 me-2" onclick=searchSong()></i>
+                    <input type="text" id="search" placeholder="Search Music...">
+
+                </div>
+                <div class="logo">
+                    <img src="assets/soundcloud.png" alt="">
+                </div>
+                <div class="burger d-block d-lg-none text-light">
+                    <i class="bi bi-list fs-3"></i>
+                </div>
+            </nav>
+            <div class="content px-4 mt-4">
+                <h1 class="mb-2">Never Stop Listening</h1>
+                <p>SoundCloud is an online audio distribution platform and music sharing website <br>that enables its
+                    users to upload promote, and share audio</p>
+                <div class="buttons">
+                    <button class="active">PLAY</button>
+                    <button>FOLLOW</button>
+                </div>
+            </div>
+            <div class="popular-song px-4 mt-4 ">
+                <div class="pop-header d-flex justify-content-between align-items-center">
+                    <h5 class="text-light">Popular Songs</h5>
+                    <div class="icons">
+                        <i class="bi bi-chevron-left"></i>
+
+                        <i class="bi bi-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="popular-lists  mt-2">
+                    <ul class="list-unstyled d-flex">
+                        <li>
+                            <div>
+                                <div class="pop-item">
+                                    <img src="assets/5lek-foulazi-tamer.jpg" alt="">
+                                    <h6 class="mb-0 mt-2">Khaled Foulazi</h6>
+                                    <span>Tamer Hosney</span>
+                                </div>
+                                <div>
+                                    <i class="bi bi-play-circle-fill playList  fs-3" id="omry-ebtada"></i>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div>
+                                <div class="pop-item">
+                                    <img src="assets/heya-elnas.jpeg" alt="">
+                                    <h6 class="mb-0 mt-2">Heya Elnas</h6>
+                                    <span>Tamer Ashour</span>
+                                </div>
+                                <div>
+                                    <i class="bi bi-play-circle-fill playList  fs-3" id="Esht_Maak_Hekayat"></i>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div>
+
+                                <div class="pop-item">
+                                    <img src="assets/ro7k-om.jpg" alt="">
+                                    <h6 class="mb-0 mt-2">Esial Ro7k</h6>
+                                    <span>Om Kalthoum</span>
+                                </div>
+                                <div>
+                                    <i class="bi bi-play-circle-fill playList  fs-3" id="el7obkolo"></i>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+
+                                <div class="pop-item">
+                                    <img src="assets/ellela-amr.jpg" alt="">
+                                    <h6 class="mb-0 mt-2">Allaylah</h6>
+                                    <span>Amr Diab</span>
+                                </div>
+                                <div>
+                                    <i class="bi bi-play-circle-fill playList  fs-3"
+                                        id="Alarab_Amr-Diab_Leila_Ya-Albaha"></i>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="pop-item">
+                                    <img src="assets/meky-wegz.webp" alt="">
+                                    <h6 class="mb-0 mt-2">We-Song</h6>
+                                    <span>Meky-Wegz</span>
+                                </div>
+                                <div>
+                                    <i class="bi bi-play-circle-fill playList  fs-3" id="Wegz.Aqwa.Mix"></i>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="pop-item">
+                                    <img src="assets/kol-youm.jpg" alt="">
+                                    <h6 class="mb-0 mt-2">Ma Balash</h6>
+                                    <span>Mohamed Hamaki</span>
+                                </div>
+                                <div>
+                                    <i class="bi bi-play-circle-fill playList  fs-3" id="HamakiMaBalash"></i>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="pop-item">
+                                    <img src="assets/artists/ehabtwfik.jfif" alt="">
+                                    <h6 class="mb-0 mt-2">Kelmetayan</h6>
+                                    <span>Ehab Twfik</span>
+                                </div>
+                                <div>
+                                    <i class="bi bi-play-circle-fill playList  fs-3" id="Kelmetayan"></i>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+
+                            <div>
+                                <div class="pop-item">
+                                    <img src="assets/5lek-foulazi-tamer.jpg" alt="">
+                                    <h6 class="mb-0 mt-2">Khaled Foulazi</h6>
+                                    <span>Tamer Hosney</span>
+                                </div>
+                                <div>
+                                    <i class="bi bi-play-circle-fill playList  fs-3" id="omry-ebtada"></i>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+
+                            <div>
+                                <div class="pop-item">
+                                    <img src="assets/5lek-foulazi-tamer.jpg" alt="">
+                                    <h6 class="mb-0 mt-2">Khaled Foulazi</h6>
+                                    <span>Tamer Hosney</span>
+                                </div>
+                                <div>
+                                    <i class="bi bi-play-circle-fill playList  fs-3" id="omry-ebtada"></i>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="popular-artists px-4">
+                <div class="pop-header  d-flex justify-content-between align-items-center">
+                    <h5>Popular Artists</h5>
+                    <!-- <div class="icons">
+                        <i class="bi bi-chevron-left"></i>
+
+                        <i class="bi bi-chevron-right"></i>
+                    </div> -->
+                </div>
+                <div class="pop-artists">
+                    <ul class="list-unstyled d-flex mt-1">
+                        <li><img src="assets/artists/7alem.jfif" alt=""></li>
+                        <li><img src="assets/artists/omkalthoun.jfif" alt=""></li>
+                        <!-- <li><img src="assets/artists/ehabtwfik.jfif" alt=""></li> -->
+                        <li><img src="assets/artists/amr.jfif" alt=""></li>
+                        <li><img src="assets/artists/tahmerhosney.jpg" alt=""></li>
+                        <li><img src="assets/artists/tamerashour.jpg" alt=""></li>
+                        <li><img src="assets/artists/hamaki.jpg" alt=""></li>
+                        <!-- <li><img src="assets/artists/meky.jfif" alt=""></li> -->
+                        <li><img src="assets/artists/qazim.jpg" alt=""></li>
+                        <!-- <li><img src="assets/artists/sherin.jpg" alt=""></li> -->
+                        <li><img src="assets/artists/mounir.jfif" alt=""></li>
+                        <!-- <li><img src="assets/artists/mohamedfouad.png" alt=""></li> -->
+                        <!-- <li><img src="assets/artists/abdelbaset.jpg.crdownload" alt=""></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="master-play d-flex align-items-center">
+            <div class="wave">
+                <div class="wave-1"> </div>
+                <div class="wave-1"></div>
+                <div class="wave-1"></div>
+            </div>
+            <img src="assets/5lek-foulazi-tamer.jpg" class="bottom-box-img" alt="5lek-foulazi-tamer">
+            <div class="d-flex flex-column ms-2 song-info">
+                <h5 class="mb-0 song-name">Omry Ebtada</h5>
+                <span class="singer">Tamer Hosney</span>
+            </div>
+            <div class="icon">
+                <i class="bi bi-skip-start-fill"></i>
+                <i class="bi bi-play-fill"></i>
+                <i class="bi bi-skip-end-fill"></i>
+            </div>
+            <span class="current-start">0:00</span>
+            <div class="bar">
+                <div class="bar-2"></div>
+                <div class="dots"></div>
+                <input type="range" min="0" max="100" value="0" id="seek">
+            </div>
+            <span class="current-end">0:00</span>
+            <i class="bi bi-volume-down-fill" id="vol-icon"></i>
+            <div class="vol">
+                <div class="vol-2"></div>
+                <div class="v-dots"></div>
+                <input type="range" min="0" max="100" value="35" id="vol">
+            </div>
+
+    </header>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/spotify-web-api-js/1.5.2/spotify-web-api.js"
+        integrity="sha512-lNAdXpUi8E6pEVDtriZ7PbNF1m9W4wYKawVkmkppB9aTBPNMmQPQmb/9LiH3qXG10DLHleRDPK4Sm2v14dIO7A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
